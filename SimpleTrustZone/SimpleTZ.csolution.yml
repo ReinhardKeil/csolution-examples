@@ -1,7 +1,13 @@
 solution:
-  created-for: CMSIS-Toolbox@2.2.0
+  created-for: CMSIS-Toolbox@2.5.0
   cdefault:
-  compiler: AC6
+
+  select-compiler:        # tested with these compilers
+    - compiler: GCC
+    - compiler: AC6
+    - compiler: IAR
+
+  compiler: AC6           # example is shipped without this selection
 
   packs:
     - pack: ARM::CMSIS@6.0.0
